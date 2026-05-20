@@ -1,0 +1,149 @@
+2026-05-20 15:54:06 | INFO | pytest | Started Chrome browser
+2026-05-20 15:56:15 | INFO | pytest | Closing Chrome browser
+2026-05-20 15:56:19 | INFO | pytest | Started Chrome browser
+2026-05-20 15:57:32 | ERROR | pytest | Could not save failure screenshot because browser session was closed: Message: invalid session id
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff79ce97de5+14895]
+	chromedriver!GetHandleVerifier [0x7ff79ce97e50+14900]
+	chromedriver!(No symbol) [0x7ff79cbfd396]
+	chromedriver!(No symbol) [0x7ff79cc48e76]
+	chromedriver!(No symbol) [0x7ff79cc7ff62]
+	chromedriver!(No symbol) [0x7ff79cc79d7f]
+	chromedriver!(No symbol) [0x7ff79cc79543]
+	chromedriver!(No symbol) [0x7ff79cbc6325]
+	chromedriver!GetHandleVerifier [0x7ff79d1acc49+3296f9]
+	chromedriver!GetHandleVerifier [0x7ff79d1a7375+323e25]
+	chromedriver!GetHandleVerifier [0x7ff79d1cbc82+348732]
+	chromedriver!GetHandleVerifier [0x7ff79ceb6045+32af5]
+	chromedriver!GetHandleVerifier [0x7ff79cebecec+3b79c]
+	chromedriver!(No symbol) [0x7ff79cbc50bc]
+	chromedriver!GetHandleVerifier [0x7ff79d310b18+48d5c8]
+	KERNEL32!BaseThreadInitThunk [0x7fff0432e957+17]
+	ntdll!RtlUserThreadStart [0x7fff0516427c+2c]
+
+2026-05-20 15:57:32 | INFO | pytest | Closing Chrome browser
+2026-05-20 15:57:35 | INFO | pytest | Started Chrome browser
+2026-05-20 15:57:38 | ERROR | pytest | Could not save failure screenshot because browser session was closed: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=148.0.7778.168)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff79ce97de5+14895]
+	chromedriver!GetHandleVerifier [0x7ff79ce97e50+14900]
+	chromedriver!(No symbol) [0x7ff79cbfd5ad]
+	chromedriver!(No symbol) [0x7ff79cbd40f2]
+	chromedriver!(No symbol) [0x7ff79cc86f56]
+	chromedriver!(No symbol) [0x7ff79cca4172]
+	chromedriver!(No symbol) [0x7ff79cc49df8]
+	chromedriver!(No symbol) [0x7ff79cc4ace3]
+	chromedriver!GetHandleVerifier [0x7ff79d1acc49+3296f9]
+	chromedriver!GetHandleVerifier [0x7ff79d1a7375+323e25]
+	chromedriver!GetHandleVerifier [0x7ff79d1cbc82+348732]
+	chromedriver!GetHandleVerifier [0x7ff79ceb6045+32af5]
+	chromedriver!GetHandleVerifier [0x7ff79cebecec+3b79c]
+	chromedriver!GetHandleVerifier [0x7ff79cea1bc4+1e674]
+	chromedriver!GetHandleVerifier [0x7ff79cea1d54+1e804]
+	chromedriver!GetHandleVerifier [0x7ff79ce860e7+2b97]
+	KERNEL32!BaseThreadInitThunk [0x7fff0432e957+17]
+	ntdll!RtlUserThreadStart [0x7fff0516427c+2c]
+
+2026-05-20 15:57:38 | INFO | pytest | Closing Chrome browser
+2026-05-20 15:57:43 | INFO | pytest | Started Chrome browser
+2026-05-20 15:57:46 | ERROR | pytest | Could not save failure screenshot because browser session was closed: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=148.0.7778.168)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff79ce97de5+14895]
+	chromedriver!GetHandleVerifier [0x7ff79ce97e50+14900]
+	chromedriver!(No symbol) [0x7ff79cbfd5ad]
+	chromedriver!(No symbol) [0x7ff79cbd40f2]
+	chromedriver!(No symbol) [0x7ff79cc86f56]
+	chromedriver!(No symbol) [0x7ff79cca4172]
+	chromedriver!(No symbol) [0x7ff79cc49df8]
+	chromedriver!(No symbol) [0x7ff79cc4ace3]
+	chromedriver!GetHandleVerifier [0x7ff79d1acc49+3296f9]
+	chromedriver!GetHandleVerifier [0x7ff79d1a7375+323e25]
+	chromedriver!GetHandleVerifier [0x7ff79d1cbc82+348732]
+	chromedriver!GetHandleVerifier [0x7ff79ceb6045+32af5]
+	chromedriver!GetHandleVerifier [0x7ff79cebecec+3b79c]
+	chromedriver!GetHandleVerifier [0x7ff79cea1bc4+1e674]
+	chromedriver!GetHandleVerifier [0x7ff79cea1d54+1e804]
+	chromedriver!GetHandleVerifier [0x7ff79ce860e7+2b97]
+	KERNEL32!BaseThreadInitThunk [0x7fff0432e957+17]
+	ntdll!RtlUserThreadStart [0x7fff0516427c+2c]
+
+2026-05-20 15:57:46 | INFO | pytest | Closing Chrome browser
+2026-05-20 15:57:51 | INFO | pytest | Started Chrome browser
+2026-05-20 15:57:53 | ERROR | pytest | Could not save failure screenshot because browser session was closed: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=148.0.7778.168)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff79ce97de5+14895]
+	chromedriver!GetHandleVerifier [0x7ff79ce97e50+14900]
+	chromedriver!(No symbol) [0x7ff79cbfd5ad]
+	chromedriver!(No symbol) [0x7ff79cbd40f2]
+	chromedriver!(No symbol) [0x7ff79cc86f56]
+	chromedriver!(No symbol) [0x7ff79cca4172]
+	chromedriver!(No symbol) [0x7ff79cc49df8]
+	chromedriver!(No symbol) [0x7ff79cc4ace3]
+	chromedriver!GetHandleVerifier [0x7ff79d1acc49+3296f9]
+	chromedriver!GetHandleVerifier [0x7ff79d1a7375+323e25]
+	chromedriver!GetHandleVerifier [0x7ff79d1cbc82+348732]
+	chromedriver!GetHandleVerifier [0x7ff79ceb6045+32af5]
+	chromedriver!GetHandleVerifier [0x7ff79cebecec+3b79c]
+	chromedriver!GetHandleVerifier [0x7ff79cea1bc4+1e674]
+	chromedriver!GetHandleVerifier [0x7ff79cea1d54+1e804]
+	chromedriver!GetHandleVerifier [0x7ff79ce860e7+2b97]
+	KERNEL32!BaseThreadInitThunk [0x7fff0432e957+17]
+	ntdll!RtlUserThreadStart [0x7fff0516427c+2c]
+
+2026-05-20 15:57:53 | INFO | pytest | Closing Chrome browser
+2026-05-20 15:57:58 | INFO | pytest | Started Chrome browser
+2026-05-20 15:58:00 | ERROR | pytest | Could not save failure screenshot because browser session was closed: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=148.0.7778.168)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff79ce97de5+14895]
+	chromedriver!GetHandleVerifier [0x7ff79ce97e50+14900]
+	chromedriver!(No symbol) [0x7ff79cbfd5ad]
+	chromedriver!(No symbol) [0x7ff79cbd40f2]
+	chromedriver!(No symbol) [0x7ff79cc86f56]
+	chromedriver!(No symbol) [0x7ff79cca4172]
+	chromedriver!(No symbol) [0x7ff79cc49df8]
+	chromedriver!(No symbol) [0x7ff79cc4ace3]
+	chromedriver!GetHandleVerifier [0x7ff79d1acc49+3296f9]
+	chromedriver!GetHandleVerifier [0x7ff79d1a7375+323e25]
+	chromedriver!GetHandleVerifier [0x7ff79d1cbc82+348732]
+	chromedriver!GetHandleVerifier [0x7ff79ceb6045+32af5]
+	chromedriver!GetHandleVerifier [0x7ff79cebecec+3b79c]
+	chromedriver!GetHandleVerifier [0x7ff79cea1bc4+1e674]
+	chromedriver!GetHandleVerifier [0x7ff79cea1d54+1e804]
+	chromedriver!GetHandleVerifier [0x7ff79ce860e7+2b97]
+	KERNEL32!BaseThreadInitThunk [0x7fff0432e957+17]
+	ntdll!RtlUserThreadStart [0x7fff0516427c+2c]
+
+2026-05-20 15:58:00 | INFO | pytest | Closing Chrome browser
+2026-05-20 15:58:04 | INFO | pytest | Started Chrome browser
+2026-05-20 15:58:06 | ERROR | pytest | Could not save failure screenshot because browser session was closed: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=148.0.7778.168)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff79ce97de5+14895]
+	chromedriver!GetHandleVerifier [0x7ff79ce97e50+14900]
+	chromedriver!(No symbol) [0x7ff79cbfd5ad]
+	chromedriver!(No symbol) [0x7ff79cbd40f2]
+	chromedriver!(No symbol) [0x7ff79cc86f56]
+	chromedriver!(No symbol) [0x7ff79cca4172]
+	chromedriver!(No symbol) [0x7ff79cc49df8]
+	chromedriver!(No symbol) [0x7ff79cc4ace3]
+	chromedriver!GetHandleVerifier [0x7ff79d1acc49+3296f9]
+	chromedriver!GetHandleVerifier [0x7ff79d1a7375+323e25]
+	chromedriver!GetHandleVerifier [0x7ff79d1cbc82+348732]
+	chromedriver!GetHandleVerifier [0x7ff79ceb6045+32af5]
+	chromedriver!GetHandleVerifier [0x7ff79cebecec+3b79c]
+	chromedriver!GetHandleVerifier [0x7ff79cea1bc4+1e674]
+	chromedriver!GetHandleVerifier [0x7ff79cea1d54+1e804]
+	chromedriver!GetHandleVerifier [0x7ff79ce860e7+2b97]
+	KERNEL32!BaseThreadInitThunk [0x7fff0432e957+17]
+	ntdll!RtlUserThreadStart [0x7fff0516427c+2c]
+
+2026-05-20 15:58:06 | INFO | pytest | Closing Chrome browser

@@ -1,0 +1,9 @@
+2026-05-20 02:12:28 | INFO | pytest | Started Chrome browser
+2026-05-20 02:14:48 | ERROR | pytest | Failure screenshot saved: C:\Users\LENOVO\OneDrive\Desktop\Deekshith_WiproCapstone\Goibibo_Holidays_Automation\screenshots\test_goibibo_holidays_booking_until_card_boundary[positive-valid-traveller]_20260520_021448.png
+2026-05-20 02:14:48 | INFO | pytest | Closing Chrome browser
+2026-05-20 02:14:52 | INFO | pytest | Started Chrome browser
+2026-05-20 02:17:00 | ERROR | pytest | Failure screenshot saved: C:\Users\LENOVO\OneDrive\Desktop\Deekshith_WiproCapstone\Goibibo_Holidays_Automation\screenshots\test_goibibo_holidays_booking_until_card_boundary[negative-empty-first-name]_20260520_021700.png
+2026-05-20 02:17:00 | INFO | pytest | Closing Chrome browser
+2026-05-20 02:17:04 | INFO | pytest | Started Chrome browser
+2026-05-20 02:19:25 | ERROR | pytest | Failure screenshot saved: C:\Users\LENOVO\OneDrive\Desktop\Deekshith_WiproCapstone\Goibibo_Holidays_Automation\screenshots\test_goibibo_holidays_booking_until_card_boundary[negative-invalid-phone]_20260520_021925.png
+2026-05-20 02:19:25 | INFO | pytest | Closing Chrome browser

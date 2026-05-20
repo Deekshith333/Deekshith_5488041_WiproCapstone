@@ -1,0 +1,8 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"Searches a holiday package, fills traveller/review details, proceeds to payment, enters dummy card data, and stops before Pay.","124162","Goibibo Holidays end-to-end booking until card details boundary","tests","2026-05-20","passed","2026-05-20","","test_holidays","",""
+"Runs data-driven positive and negative scenarios from the CSV/XLSX test data.","121823","Goibibo Holidays positive and negative data-driven case","tests","2026-05-20","passed","2026-05-20","","test_positive_negative","",""
+"Runs data-driven positive and negative scenarios from the CSV/XLSX test data.","92571","Goibibo Holidays positive and negative data-driven case","tests","2026-05-20","passed","2026-05-20","","test_positive_negative","",""
+"Runs data-driven positive and negative scenarios from the CSV/XLSX test data.","126560","Goibibo Holidays positive and negative data-driven case","tests","2026-05-20","passed","2026-05-20","","test_positive_negative","",""
+"Runs data-driven positive and negative scenarios from the CSV/XLSX test data.","127382","Goibibo Holidays positive and negative data-driven case","tests","2026-05-20","passed","2026-05-20","","test_positive_negative","",""
+"Runs data-driven positive and negative scenarios from the CSV/XLSX test data.","113957","Goibibo Holidays positive and negative data-driven case","tests","2026-05-20","passed","2026-05-20","","test_positive_negative","",""
+"Runs data-driven positive and negative scenarios from the CSV/XLSX test data.","116962","Goibibo Holidays positive and negative data-driven case","tests","2026-05-20","passed","2026-05-20","","test_positive_negative","",""

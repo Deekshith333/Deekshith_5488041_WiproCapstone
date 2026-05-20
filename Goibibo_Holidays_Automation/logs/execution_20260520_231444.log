@@ -1,0 +1,3 @@
+2026-05-20 23:14:51 | INFO | pytest | Started Chrome browser
+2026-05-20 23:16:48 | INFO | pytest | Closing Chrome browser
+2026-05-20 23:16:51 | WARNING | pytest | Allure command/result folder not found. Skipping Allure report generation.

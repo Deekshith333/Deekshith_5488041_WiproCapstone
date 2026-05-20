@@ -1,0 +1,7 @@
+case_id,case_type,from_city,to_city,departure_day,departure_month,departure_year,rooms,adults,first_name,last_name,email,mobile,expected_error
+TC_POS_001,positive,Hyderabad,Goa,20,May,2026,1,1,Deekshith,Vanaparthi,deekshith1@example.com,9876543210,
+TC_POS_002,positive,Mumbai,Rajasthan,20,May,2026,1,1,Rahul,Sharma,rahul.sharma@example.com,9123456780,
+TC_POS_003,positive,Bengaluru,Kerala,20,May,2026,1,1,Priya,Reddy,priya.reddy@example.com,9988776655,
+TC_POS_004,positive,Chennai,Andaman,20,May,2026,1,1,Ananya,Rao,ananya.rao@example.com,9090909090,
+TC_NEG_001,negative,Hyderabad,Goa,20,May,2026,1,1,,Vanaparthi,negative.empty@example.com,9876543210,first name validation
+TC_NEG_002,negative,Hyderabad,Goa,20,May,2026,1,1,Deekshith,Vanaparthi,negative.phone@example.com,12345,mobile validation

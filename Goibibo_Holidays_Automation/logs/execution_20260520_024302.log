@@ -1,0 +1,3 @@
+2026-05-20 02:43:04 | INFO | pytest | Started Chrome browser
+2026-05-20 02:45:31 | ERROR | pytest | Failure screenshot saved: C:\Users\LENOVO\OneDrive\Desktop\Deekshith_WiproCapstone\Goibibo_Holidays_Automation\screenshots\test_goibibo_holidays_end_to_end_until_card_boundary_20260520_024530.png
+2026-05-20 02:45:31 | INFO | pytest | Closing Chrome browser

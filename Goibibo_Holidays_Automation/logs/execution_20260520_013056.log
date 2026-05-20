@@ -1,0 +1,7 @@
+2026-05-20 01:30:58 | INFO | pytest | Started Chrome browser
+2026-05-20 01:32:38 | ERROR | pytest | Failure screenshot saved: C:\Users\LENOVO\OneDrive\Desktop\Deekshith_WiproCapstone\Goibibo_Holidays_Automation\screenshots\test_goibibo_holidays_booking_until_card_boundary[positive-valid-traveller]_20260520_013238.png
+2026-05-20 01:32:38 | INFO | pytest | Closing Chrome browser
+2026-05-20 01:32:42 | INFO | pytest | Started Chrome browser
+2026-05-20 01:32:42 | INFO | pytest | Closing Chrome browser
+2026-05-20 01:32:45 | INFO | pytest | Started Chrome browser
+2026-05-20 01:32:46 | INFO | pytest | Closing Chrome browser

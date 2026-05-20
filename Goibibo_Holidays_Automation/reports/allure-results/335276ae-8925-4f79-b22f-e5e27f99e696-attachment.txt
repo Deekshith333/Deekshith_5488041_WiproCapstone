@@ -1,0 +1,2 @@
+[32mINFO    [0m pytest:conftest.py:17 Started Chrome browser
+[32mINFO    [0m pytest:conftest.py:19 Closing Chrome browser
