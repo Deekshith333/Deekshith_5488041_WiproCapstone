@@ -1,0 +1,12 @@
+2026-05-21 13:21:24 | INFO | pytest | Started Chrome browser
+2026-05-21 13:21:26 | INFO | homepage | Goibibo website launched
+2026-05-21 13:21:45 | INFO | homepage | Navigated to Holidays page
+2026-05-21 13:21:53 | INFO | search | Selected FROM city: Chennai
+2026-05-21 13:21:53 | INFO | search | Selected TO city: Andaman
+2026-05-21 13:21:54 | INFO | search | Departure date selected
+2026-05-21 13:21:57 | INFO | search | Holiday search submitted
+2026-05-21 13:22:38 | WARNING | search | Search widget failed, using direct search URL fallback
+2026-05-21 13:22:43 | INFO | packages | Opened direct checkout page
+2026-05-21 13:23:13 | INFO | payment | Traveller details entered successfully
+2026-05-21 13:23:25 | INFO | payment | Card details entered successfully
+2026-05-21 13:23:25 | INFO | pytest | Closing Chrome browser

@@ -2,6 +2,7 @@ from pathlib import Path
 from typing import Iterable
 
 import pytest
+import allure
 from selenium.common.exceptions import ElementNotInteractableException, TimeoutException, WebDriverException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -118,6 +119,14 @@ class BasePage:
         SCREENSHOT_DIR.mkdir(parents=True, exist_ok=True)
         path = SCREENSHOT_DIR / f"{name}.png"
         self.driver.save_screenshot(str(path))
+        try:
+            allure.attach.file(
+                str(path),
+                name=name,
+                attachment_type=allure.attachment_type.PNG,
+            )
+        except Exception:
+            pass
         return path
 
     def close_popups(self):

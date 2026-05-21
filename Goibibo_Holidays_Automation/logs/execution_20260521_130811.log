@@ -1,0 +1,3 @@
+2026-05-21 13:08:14 | INFO | pytest | Started Chrome browser
+2026-05-21 13:10:08 | INFO | pytest | Closing Chrome browser
+2026-05-21 13:10:15 | ERROR | pytest | Could not generate/open Allure report automatically: Command '['npx.cmd', 'allure', 'generate', 'C:\\Users\\LENOVO\\OneDrive\\Desktop\\Deekshith_WiproCapstone\\Goibibo_Holidays_Automation\\reports\\allure-results', '--clean', '-o', 'C:\\Users\\LENOVO\\OneDrive\\Desktop\\Deekshith_WiproCapstone\\Goibibo_Holidays_Automation\\reports\\allure-report']' returned non-zero exit status 1.

@@ -21,6 +21,7 @@ def get_logger(name: str) -> logging.Logger:
         LOG_DIR / f"execution_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log",
         encoding="utf-8",
     )
+    logger.log_file_path = file_handler.baseFilename
     file_handler.setFormatter(formatter)
 
     console_handler = logging.StreamHandler()
@@ -29,4 +30,3 @@ def get_logger(name: str) -> logging.Logger:
     logger.addHandler(file_handler)
     logger.addHandler(console_handler)
     return logger
-

@@ -3,6 +3,9 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 from config import BASE_URL, GI_HOLIDAYS_HOME_URL, HOLIDAYS_FALLBACK_URL
 from pages.base_page import BasePage
+from utils.logger import get_logger
+
+logger = get_logger("homepage")
 
 
 class HomePage(BasePage):
@@ -16,6 +19,7 @@ class HomePage(BasePage):
         if self.is_site_unavailable():
             self.save_screenshot("goibibo_home_unavailable_using_holidays_fallback")
             self.open_url(GI_HOLIDAYS_HOME_URL)
+            logger.info("Goibibo website launched")
             if self.is_site_unavailable():
                 self.open_url(HOLIDAYS_FALLBACK_URL)
                 self.skip_if_site_unavailable()
@@ -28,6 +32,7 @@ class HomePage(BasePage):
             self.click(self.HOLIDAYS_TAB, timeout=12)
             self.switch_to_latest_window()
             self.wait_for_page_load()
+            logger.info("Navigated to Holidays page")
         except Exception:
             self.open_url(GI_HOLIDAYS_HOME_URL)
 

@@ -1,0 +1,16 @@
+{
+  "case_id": "TC_NEG_002",
+  "case_type": "negative",
+  "from_city": "Hyderabad",
+  "to_city": "Goa",
+  "departure_day": "20",
+  "departure_month": "May",
+  "departure_year": "2026",
+  "rooms": "1",
+  "adults": "1",
+  "first_name": "Deekshith",
+  "last_name": "Vanaparthi",
+  "email": "negative.phone@example.com",
+  "mobile": "12345",
+  "expected_error": "mobile validation"
+}

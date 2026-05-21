@@ -1,0 +1,12 @@
+2026-05-21 13:17:26 | INFO | pytest | Started Chrome browser
+2026-05-21 13:17:29 | INFO | homepage | Goibibo website launched
+2026-05-21 13:17:48 | INFO | homepage | Navigated to Holidays page
+2026-05-21 13:17:55 | INFO | search | Selected FROM city: Mumbai
+2026-05-21 13:17:55 | INFO | search | Selected TO city: Rajasthan
+2026-05-21 13:17:57 | INFO | search | Departure date selected
+2026-05-21 13:18:00 | INFO | search | Holiday search submitted
+2026-05-21 13:18:40 | WARNING | search | Search widget failed, using direct search URL fallback
+2026-05-21 13:18:45 | INFO | packages | Opened direct checkout page
+2026-05-21 13:19:16 | INFO | payment | Traveller details entered successfully
+2026-05-21 13:19:27 | INFO | payment | Card details entered successfully
+2026-05-21 13:19:27 | INFO | pytest | Closing Chrome browser

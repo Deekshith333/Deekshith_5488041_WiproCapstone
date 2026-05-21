@@ -5,6 +5,9 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 from config import DIRECT_CHECKOUT_URL, ROOT_DIR
 from pages.base_page import BasePage
+from utils.logger import get_logger
+
+logger = get_logger("packages")
 
 
 class PackagesPage(BasePage):
@@ -44,6 +47,7 @@ class PackagesPage(BasePage):
         self.wait_for_package_listing()
         self.save_screenshot("04_package_listing_reached")
         self.open_url(DIRECT_CHECKOUT_URL)
+        logger.info("Opened direct checkout page")
         self.switch_to_latest_window()
         self.wait_for_page_load()
         if self._checkout_unavailable():
@@ -74,6 +78,7 @@ class PackagesPage(BasePage):
 
         if self._is_details_page(old_url):
             self.save_screenshot("05_package_details")
+            logger.info("Package selected successfully")
             return
 
         # Some cards open an option chooser. In that chooser choose Without Flight.

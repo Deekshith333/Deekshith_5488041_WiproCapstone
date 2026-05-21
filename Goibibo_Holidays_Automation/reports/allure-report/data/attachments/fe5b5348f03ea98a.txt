@@ -1,0 +1,11 @@
+2026-05-21 13:19:31 | INFO | pytest | Started Chrome browser
+2026-05-21 13:19:42 | INFO | homepage | Navigated to Holidays page
+2026-05-21 13:19:49 | INFO | search | Selected FROM city: Bengaluru
+2026-05-21 13:19:49 | INFO | search | Selected TO city: Kerala
+2026-05-21 13:19:51 | INFO | search | Departure date selected
+2026-05-21 13:19:54 | INFO | search | Holiday search submitted
+2026-05-21 13:20:34 | WARNING | search | Search widget failed, using direct search URL fallback
+2026-05-21 13:20:39 | INFO | packages | Opened direct checkout page
+2026-05-21 13:21:09 | INFO | payment | Traveller details entered successfully
+2026-05-21 13:21:20 | INFO | payment | Card details entered successfully
+2026-05-21 13:21:20 | INFO | pytest | Closing Chrome browser

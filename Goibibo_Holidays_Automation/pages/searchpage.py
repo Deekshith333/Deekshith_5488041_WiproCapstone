@@ -6,6 +6,9 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 from config import HOLIDAYS_SEARCH_URL
 from pages.base_page import BasePage
+from utils.logger import get_logger
+
+logger = get_logger("search")
 
 
 class SearchPage(BasePage):
@@ -50,13 +53,19 @@ class SearchPage(BasePage):
     def enter_search_details(self, data):
         try:
             self._select_city(self.FROM_CITY, data["from_city"])
+            logger.info(f"Selected FROM city: {data['from_city']}")
             self._select_city(self.TO_CITY, data["to_city"])
+            logger.info(f"Selected TO city: {data['to_city']}")
             self._select_date(data["departure_day"], data["departure_month"], data["departure_year"])
+            logger.info("Departure date selected")
             self._apply_guests_if_open(data["rooms"], data["adults"])
             self.click(self.SEARCH, timeout=12)
+            logger.info("Holiday search submitted")
             self.switch_to_latest_window()
             self._wait_for_results()
+            logger.info("Holiday package results loaded")
         except Exception:
+            logger.warning("Search widget failed, using direct search URL fallback")
             self.save_screenshot("search_widget_failed_using_direct_url")
             self.open_results_directly(data)
 

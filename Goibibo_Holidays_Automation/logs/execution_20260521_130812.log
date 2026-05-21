@@ -1,0 +1,9 @@
+2026-05-21 13:08:26 | INFO | homepage | Navigated to Holidays page
+2026-05-21 13:08:36 | INFO | search | Selected FROM city: Hyderabad
+2026-05-21 13:08:36 | INFO | search | Selected TO city: Goa
+2026-05-21 13:08:37 | INFO | search | Departure date selected
+2026-05-21 13:08:41 | INFO | search | Holiday search submitted
+2026-05-21 13:09:21 | WARNING | search | Search widget failed, using direct search URL fallback
+2026-05-21 13:09:26 | INFO | packages | Opened direct checkout page
+2026-05-21 13:09:56 | INFO | payment | Traveller details entered successfully
+2026-05-21 13:10:08 | INFO | payment | Card details entered successfully

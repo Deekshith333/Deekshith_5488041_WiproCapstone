@@ -4,6 +4,9 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 
 from pages.base_page import BasePage
+from utils.logger import get_logger
+
+logger = get_logger("payment")
 
 
 class PaymentPage(BasePage):
@@ -115,6 +118,7 @@ class PaymentPage(BasePage):
         self._pause()
         self.save_screenshot("07_traveller_review_details")
         self._click_proceed_to_payments()
+        logger.info("Traveller details entered successfully")
         self.save_screenshot("07_traveller_details")
 
     def verify_negative_validation(self):
@@ -160,6 +164,7 @@ class PaymentPage(BasePage):
         self.type_if_present(self.NAME_ON_CARD, "TEST USER")
         self._pause()
         self.save_screenshot("08_card_details_entered_stop")
+        logger.info("Card details entered successfully")
 
     def _sync_fallback_test_data(self, data):
         self.driver.execute_script(

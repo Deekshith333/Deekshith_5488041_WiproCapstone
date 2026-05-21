@@ -1,0 +1,11 @@
+INFO     pytest:conftest.py:18 Started Chrome browser
+INFO     homepage:homepage.py:35 Navigated to Holidays page
+INFO     search:searchpage.py:56 Selected FROM city: Hyderabad
+INFO     search:searchpage.py:58 Selected TO city: Goa
+INFO     search:searchpage.py:60 Departure date selected
+INFO     search:searchpage.py:63 Holiday search submitted
+WARNING  search:searchpage.py:68 Search widget failed, using direct search URL fallback
+INFO     packages:packagespage.py:50 Opened direct checkout page
+INFO     payment:paymentpage.py:121 Traveller details entered successfully
+INFO     payment:paymentpage.py:167 Card details entered successfully
+INFO     pytest:conftest.py:30 Closing Chrome browser

@@ -1,4 +1,5 @@
 import allure
+import json
 import pytest
 
 from pages.homepage import HomePage
@@ -23,21 +24,36 @@ TEST_CASES = [
 @allure.description("Runs data-driven positive and negative scenarios from the CSV/XLSX test data.")
 def test_positive_and_negative_holiday_cases(case_id, driver):
     data = get_case(case_id)
+    allure.dynamic.title(f"{case_id} - {data['case_type']} Goibibo Holidays scenario")
+    allure.attach(
+        json.dumps(data, indent=2),
+        name=f"test_data_{case_id}",
+        attachment_type=allure.attachment_type.JSON,
+    )
     home = HomePage(driver)
     search = SearchPage(driver)
     packages = PackagesPage(driver)
     payment = PaymentPage(driver)
 
-    home.launch_website()
-    home.navigate_to_holidays()
-    search.enter_search_details(data)
-    packages.wait_for_package_listing()
-    packages.open_checkout_directly()
-    payment.enter_traveller_details(data)
+    with allure.step("Launch Goibibo website"):
+        home.launch_website()
+    with allure.step("Navigate to Holidays module"):
+        home.navigate_to_holidays()
+    with allure.step("Enter holiday search details from test data"):
+        search.enter_search_details(data)
+    with allure.step("Wait for package listing page"):
+        packages.wait_for_package_listing()
+    with allure.step("Open checkout/payment boundary"):
+        packages.open_checkout_directly()
+    with allure.step("Enter traveller, contact and GST details"):
+        payment.enter_traveller_details(data)
 
     if data["case_type"] == "negative":
-        payment.verify_negative_validation_or_boundary(data["expected_error"])
+        with allure.step("Verify negative validation or boundary behavior"):
+            payment.verify_negative_validation_or_boundary(data["expected_error"])
         return
 
-    payment.select_card_and_enter_details()
-    assert payment.page_contains("card", timeout=5) or payment.page_contains("CVV", timeout=5)
+    with allure.step("Select credit/debit card and enter dummy card details"):
+        payment.select_card_and_enter_details()
+    with allure.step("Verify card details boundary is reached"):
+        assert payment.page_contains("card", timeout=5) or payment.page_contains("CVV", timeout=5)

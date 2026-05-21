@@ -1,0 +1,16 @@
+{
+  "case_id": "TC_POS_004",
+  "case_type": "positive",
+  "from_city": "Chennai",
+  "to_city": "Andaman",
+  "departure_day": "20",
+  "departure_month": "May",
+  "departure_year": "2026",
+  "rooms": "1",
+  "adults": "1",
+  "first_name": "Ananya",
+  "last_name": "Rao",
+  "email": "ananya.rao@example.com",
+  "mobile": "9090909090",
+  "expected_error": ""
+}

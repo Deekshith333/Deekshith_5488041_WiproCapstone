@@ -1,0 +1,15 @@
+2026-05-21 09:55:38 | INFO | pytest | Started Chrome browser
+2026-05-21 09:57:36 | INFO | pytest | Closing Chrome browser
+2026-05-21 09:57:41 | INFO | pytest | Started Chrome browser
+2026-05-21 09:59:46 | INFO | pytest | Closing Chrome browser
+2026-05-21 09:59:51 | INFO | pytest | Started Chrome browser
+2026-05-21 10:01:55 | INFO | pytest | Closing Chrome browser
+2026-05-21 10:01:59 | INFO | pytest | Started Chrome browser
+2026-05-21 10:04:02 | INFO | pytest | Closing Chrome browser
+2026-05-21 10:04:06 | INFO | pytest | Started Chrome browser
+2026-05-21 10:06:09 | INFO | pytest | Closing Chrome browser
+2026-05-21 10:06:13 | INFO | pytest | Started Chrome browser
+2026-05-21 10:07:59 | INFO | pytest | Closing Chrome browser
+2026-05-21 10:08:07 | INFO | pytest | Started Chrome browser
+2026-05-21 10:09:57 | INFO | pytest | Closing Chrome browser
+2026-05-21 10:10:03 | ERROR | pytest | Could not generate/open Allure report automatically: Command '['npx.cmd', 'allure', 'generate', 'C:\\Users\\LENOVO\\OneDrive\\Desktop\\Deekshith_WiproCapstone\\Goibibo_Holidays_Automation\\reports\\allure-results', '--clean', '-o', 'C:\\Users\\LENOVO\\OneDrive\\Desktop\\Deekshith_WiproCapstone\\Goibibo_Holidays_Automation\\reports\\allure-report']' returned non-zero exit status 1.

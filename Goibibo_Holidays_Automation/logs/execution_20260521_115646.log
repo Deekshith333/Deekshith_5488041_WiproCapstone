@@ -1,0 +1,12 @@
+2026-05-21 11:56:48 | INFO | pytest | Started Chrome browser
+2026-05-21 11:57:02 | INFO | homepage | Navigated to Holidays page
+2026-05-21 11:57:11 | INFO | search | Selected FROM city: Hyderabad
+2026-05-21 11:57:11 | INFO | search | Selected TO city: Goa
+2026-05-21 11:57:13 | INFO | search | Departure date selected
+2026-05-21 11:57:17 | INFO | search | Holiday search submitted
+2026-05-21 11:57:56 | WARNING | search | Search widget failed, using direct search URL fallback
+2026-05-21 11:58:02 | INFO | packages | Opened direct checkout page
+2026-05-21 11:58:31 | INFO | payment | Traveller details entered successfully
+2026-05-21 11:58:43 | INFO | payment | Card details entered successfully
+2026-05-21 11:58:43 | INFO | pytest | Closing Chrome browser
+2026-05-21 11:58:48 | ERROR | pytest | Could not generate/open Allure report automatically: Command '['npx.cmd', 'allure', 'generate', 'C:\\Users\\LENOVO\\OneDrive\\Desktop\\Deekshith_WiproCapstone\\Goibibo_Holidays_Automation\\reports\\allure-results', '--clean', '-o', 'C:\\Users\\LENOVO\\OneDrive\\Desktop\\Deekshith_WiproCapstone\\Goibibo_Holidays_Automation\\reports\\allure-report']' returned non-zero exit status 1.

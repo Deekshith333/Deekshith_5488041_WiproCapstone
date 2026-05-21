@@ -1,0 +1,16 @@
+{
+  "case_id": "TC_POS_001",
+  "case_type": "positive",
+  "from_city": "Hyderabad",
+  "to_city": "Goa",
+  "departure_day": "20",
+  "departure_month": "May",
+  "departure_year": "2026",
+  "rooms": "1",
+  "adults": "1",
+  "first_name": "Deekshith",
+  "last_name": "Vanaparthi",
+  "email": "deekshith1@example.com",
+  "mobile": "9876543210",
+  "expected_error": ""
+}

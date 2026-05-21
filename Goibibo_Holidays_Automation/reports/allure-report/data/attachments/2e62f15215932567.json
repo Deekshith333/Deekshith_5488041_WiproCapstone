@@ -1,0 +1,16 @@
+{
+  "case_id": "TC_POS_002",
+  "case_type": "positive",
+  "from_city": "Mumbai",
+  "to_city": "Rajasthan",
+  "departure_day": "20",
+  "departure_month": "May",
+  "departure_year": "2026",
+  "rooms": "1",
+  "adults": "1",
+  "first_name": "Rahul",
+  "last_name": "Sharma",
+  "email": "rahul.sharma@example.com",
+  "mobile": "9123456780",
+  "expected_error": ""
+}

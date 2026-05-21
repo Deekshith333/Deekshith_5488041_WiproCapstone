@@ -1,0 +1,11 @@
+2026-05-21 13:25:27 | INFO | pytest | Started Chrome browser
+2026-05-21 13:25:29 | INFO | homepage | Goibibo website launched
+2026-05-21 13:25:48 | INFO | homepage | Navigated to Holidays page
+2026-05-21 13:25:56 | INFO | search | Selected FROM city: Hyderabad
+2026-05-21 13:25:56 | INFO | search | Selected TO city: Goa
+2026-05-21 13:25:57 | INFO | search | Departure date selected
+2026-05-21 13:26:01 | INFO | search | Holiday search submitted
+2026-05-21 13:26:40 | WARNING | search | Search widget failed, using direct search URL fallback
+2026-05-21 13:26:46 | INFO | packages | Opened direct checkout page
+2026-05-21 13:27:16 | INFO | payment | Traveller details entered successfully
+2026-05-21 13:27:26 | INFO | pytest | Closing Chrome browser

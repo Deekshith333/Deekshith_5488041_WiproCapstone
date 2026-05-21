@@ -3,6 +3,7 @@ import os
 import subprocess
 
 import pytest
+import allure
 
 from config import REPORT_DIR, ROOT_DIR, SCREENSHOT_DIR
 from utils.driver_setup import create_driver
@@ -16,6 +17,16 @@ def driver():
     driver_instance = create_driver()
     logger.info("Started Chrome browser")
     yield driver_instance
+    log_file = getattr(logger, "log_file_path", None)
+    if log_file and os.path.exists(log_file):
+        try:
+            allure.attach.file(
+                log_file,
+                name="execution_log",
+                attachment_type=allure.attachment_type.TEXT,
+            )
+        except Exception:
+            pass
     logger.info("Closing Chrome browser")
     try:
         driver_instance.quit()
@@ -35,7 +46,15 @@ def pytest_runtest_makereport(item, call):
             screenshot = SCREENSHOT_DIR / f"{item.name}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.png"
             try:
                 driver_instance.save_screenshot(str(screenshot))
+
+                allure.attach.file(
+                    str(screenshot),
+                    name=f"{item.name}_failure_screenshot",
+                    attachment_type=allure.attachment_type.PNG
+                )
+
                 logger.error("Failure screenshot saved: %s", screenshot)
+
             except Exception as exc:
                 logger.error("Could not save failure screenshot because browser session was closed: %s", exc)
 

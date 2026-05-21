@@ -1,0 +1,58 @@
+2026-05-21 13:13:13 | INFO | pytest | Started Chrome browser
+2026-05-21 13:13:16 | INFO | homepage | Goibibo website launched
+2026-05-21 13:13:35 | INFO | homepage | Navigated to Holidays page
+2026-05-21 13:13:43 | INFO | search | Selected FROM city: Hyderabad
+2026-05-21 13:13:43 | INFO | search | Selected TO city: Goa
+2026-05-21 13:13:44 | INFO | search | Departure date selected
+2026-05-21 13:13:47 | INFO | search | Holiday search submitted
+2026-05-21 13:14:27 | WARNING | search | Search widget failed, using direct search URL fallback
+2026-05-21 13:14:33 | INFO | packages | Opened direct checkout page
+2026-05-21 13:15:05 | INFO | payment | Traveller details entered successfully
+2026-05-21 13:15:16 | INFO | payment | Card details entered successfully
+2026-05-21 13:15:16 | INFO | pytest | Closing Chrome browser
+2026-05-21 13:15:20 | INFO | pytest | Started Chrome browser
+2026-05-21 13:15:24 | INFO | homepage | Goibibo website launched
+2026-05-21 13:15:43 | INFO | homepage | Navigated to Holidays page
+2026-05-21 13:15:50 | INFO | search | Selected FROM city: Hyderabad
+2026-05-21 13:15:50 | INFO | search | Selected TO city: Goa
+2026-05-21 13:15:52 | INFO | search | Departure date selected
+2026-05-21 13:15:55 | INFO | search | Holiday search submitted
+2026-05-21 13:16:35 | WARNING | search | Search widget failed, using direct search URL fallback
+2026-05-21 13:16:40 | INFO | packages | Opened direct checkout page
+2026-05-21 13:17:10 | INFO | payment | Traveller details entered successfully
+2026-05-21 13:17:22 | INFO | payment | Card details entered successfully
+2026-05-21 13:17:22 | INFO | pytest | Closing Chrome browser
+2026-05-21 13:17:26 | INFO | pytest | Started Chrome browser
+2026-05-21 13:17:29 | INFO | homepage | Goibibo website launched
+2026-05-21 13:17:48 | INFO | homepage | Navigated to Holidays page
+2026-05-21 13:17:55 | INFO | search | Selected FROM city: Mumbai
+2026-05-21 13:17:55 | INFO | search | Selected TO city: Rajasthan
+2026-05-21 13:17:57 | INFO | search | Departure date selected
+2026-05-21 13:18:00 | INFO | search | Holiday search submitted
+2026-05-21 13:18:40 | WARNING | search | Search widget failed, using direct search URL fallback
+2026-05-21 13:18:45 | INFO | packages | Opened direct checkout page
+2026-05-21 13:19:16 | INFO | payment | Traveller details entered successfully
+2026-05-21 13:19:27 | INFO | payment | Card details entered successfully
+2026-05-21 13:19:27 | INFO | pytest | Closing Chrome browser
+2026-05-21 13:19:31 | INFO | pytest | Started Chrome browser
+2026-05-21 13:19:42 | INFO | homepage | Navigated to Holidays page
+2026-05-21 13:19:49 | INFO | search | Selected FROM city: Bengaluru
+2026-05-21 13:19:49 | INFO | search | Selected TO city: Kerala
+2026-05-21 13:19:51 | INFO | search | Departure date selected
+2026-05-21 13:19:54 | INFO | search | Holiday search submitted
+2026-05-21 13:20:34 | WARNING | search | Search widget failed, using direct search URL fallback
+2026-05-21 13:20:39 | INFO | packages | Opened direct checkout page
+2026-05-21 13:21:09 | INFO | payment | Traveller details entered successfully
+2026-05-21 13:21:20 | INFO | payment | Card details entered successfully
+2026-05-21 13:21:20 | INFO | pytest | Closing Chrome browser
+2026-05-21 13:21:24 | INFO | pytest | Started Chrome browser
+2026-05-21 13:21:26 | INFO | homepage | Goibibo website launched
+2026-05-21 13:21:45 | INFO | homepage | Navigated to Holidays page
+2026-05-21 13:21:53 | INFO | search | Selected FROM city: Chennai
+2026-05-21 13:21:53 | INFO | search | Selected TO city: Andaman
+2026-05-21 13:21:54 | INFO | search | Departure date selected
+2026-05-21 13:21:57 | INFO | search | Holiday search submitted
+2026-05-21 13:22:38 | WARNING | search | Search widget failed, using direct search URL fallback
+2026-05-21 13:22:43 | INFO | packages | Opened direct checkout page
+2026-05-21 13:23:13 | INFO | payment | Traveller details entered successfully
+2026-05-21 13:23:25 | INFO | payment | Card details entered successfully
