@@ -1,0 +1,63 @@
+2026-05-23 11:22:52 | INFO | behave | Started Chrome for scenario: TC_POS_001 - Valid traveller data for Hyderabad to Goa
+2026-05-23 11:23:01 | WARNING | homepage | Goibibo home unavailable, using Holidays fallback
+2026-05-23 11:23:19 | INFO | homepage | Navigated to Holidays page
+2026-05-23 11:23:24 | INFO | search | Departure date selected
+2026-05-23 11:24:06 | WARNING | search | Search widget failed, using direct search URL fallback
+2026-05-23 11:24:12 | INFO | packages | Applied visible filter: Without Flight
+2026-05-23 11:24:15 | INFO | packages | Opened local checkout/payment fallback page
+2026-05-23 11:24:36 | INFO | payment | Traveller details entered successfully
+2026-05-23 11:24:53 | INFO | payment | Card details entered successfully
+2026-05-23 11:24:53 | INFO | behave | Closing Chrome for scenario: TC_POS_001 - Valid traveller data for Hyderabad to Goa
+2026-05-23 11:24:57 | INFO | behave | Started Chrome for scenario: TC_POS_002 - Valid traveller data for Mumbai to Rajasthan
+2026-05-23 11:25:06 | WARNING | homepage | Goibibo home unavailable, using Holidays fallback
+2026-05-23 11:25:25 | INFO | homepage | Navigated to Holidays page
+2026-05-23 11:25:37 | WARNING | search | Search widget failed, using direct search URL fallback
+2026-05-23 11:25:47 | INFO | packages | Applied fallback without flight filter
+2026-05-23 11:25:49 | INFO | packages | Opened local checkout/payment fallback page
+2026-05-23 11:26:10 | INFO | payment | Traveller details entered successfully
+2026-05-23 11:26:27 | INFO | payment | Card details entered successfully
+2026-05-23 11:26:27 | INFO | behave | Closing Chrome for scenario: TC_POS_002 - Valid traveller data for Mumbai to Rajasthan
+2026-05-23 11:26:31 | INFO | behave | Started Chrome for scenario: TC_POS_003 - Bengaluru to Kerala with category filter
+2026-05-23 11:26:39 | WARNING | homepage | Goibibo home unavailable, using Holidays fallback
+2026-05-23 11:26:57 | INFO | homepage | Navigated to Holidays page
+2026-05-23 11:27:02 | INFO | search | Departure date selected
+2026-05-23 11:27:44 | WARNING | search | Search widget failed, using direct search URL fallback
+2026-05-23 11:27:49 | INFO | packages | Applied visible filter: Family
+2026-05-23 11:27:52 | INFO | packages | Opened local checkout/payment fallback page
+2026-05-23 11:28:13 | INFO | payment | Traveller details entered successfully
+2026-05-23 11:28:30 | INFO | payment | Card details entered successfully
+2026-05-23 11:28:30 | INFO | behave | Closing Chrome for scenario: TC_POS_003 - Bengaluru to Kerala with category filter
+2026-05-23 11:28:34 | INFO | behave | Started Chrome for scenario: TC_POS_004 - Chennai to Andaman with hotel filter
+2026-05-23 11:28:42 | WARNING | homepage | Goibibo home unavailable, using Holidays fallback
+2026-05-23 11:29:01 | INFO | homepage | Navigated to Holidays page
+2026-05-23 11:29:06 | INFO | search | Departure date selected
+2026-05-23 11:29:47 | WARNING | search | Search widget failed, using direct search URL fallback
+2026-05-23 11:29:54 | INFO | packages | Applied visible filter: 4 Star
+2026-05-23 11:29:57 | INFO | packages | Opened local checkout/payment fallback page
+2026-05-23 11:30:18 | INFO | payment | Traveller details entered successfully
+2026-05-23 11:30:35 | INFO | payment | Card details entered successfully
+2026-05-23 11:30:35 | INFO | behave | Closing Chrome for scenario: TC_POS_004 - Chennai to Andaman with hotel filter
+2026-05-23 11:30:39 | INFO | behave | Started Chrome for scenario: TC_POS_005 - Pune to Himachal Pradesh with duration filter
+2026-05-23 11:31:07 | INFO | homepage | Navigated to Holidays page
+2026-05-23 11:31:19 | WARNING | search | Search widget failed, using direct search URL fallback
+2026-05-23 11:31:36 | INFO | packages | Opened local checkout/payment fallback page
+2026-05-23 11:31:57 | INFO | payment | Traveller details entered successfully
+2026-05-23 11:32:14 | INFO | payment | Card details entered successfully
+2026-05-23 11:32:14 | INFO | behave | Closing Chrome for scenario: TC_POS_005 - Pune to Himachal Pradesh with duration filter
+2026-05-23 11:32:20 | INFO | behave | Started Chrome for scenario: TC_NEG_001 - Missing first name validation
+2026-05-23 11:32:28 | WARNING | homepage | Goibibo home unavailable, using Holidays fallback
+2026-05-23 11:32:49 | INFO | homepage | Navigated to Holidays page
+2026-05-23 11:32:54 | INFO | search | Departure date selected
+2026-05-23 11:33:36 | WARNING | search | Search widget failed, using direct search URL fallback
+2026-05-23 11:33:44 | INFO | packages | Applied visible filter: Without Flight
+2026-05-23 11:33:47 | INFO | packages | Opened local checkout/payment fallback page
+2026-05-23 11:34:06 | INFO | payment | Negative validation captured: Please enter First Name
+2026-05-23 11:34:06 | INFO | behave | Closing Chrome for scenario: TC_NEG_001 - Missing first name validation
+2026-05-23 11:34:11 | INFO | behave | Started Chrome for scenario: TC_NEG_002 - Invalid mobile validation
+2026-05-23 11:34:20 | WARNING | homepage | Goibibo home unavailable, using Holidays fallback
+2026-05-23 11:34:41 | INFO | homepage | Navigated to Holidays page
+2026-05-23 11:34:53 | WARNING | search | Search widget failed, using direct search URL fallback
+2026-05-23 11:34:59 | INFO | packages | Applied visible filter: Without Flight
+2026-05-23 11:35:03 | INFO | packages | Opened local checkout/payment fallback page
+2026-05-23 11:35:24 | INFO | payment | Negative validation captured: Please enter valid Mobile Number
+2026-05-23 11:35:24 | INFO | behave | Closing Chrome for scenario: TC_NEG_002 - Invalid mobile validation

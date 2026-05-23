@@ -1,0 +1,7 @@
+2026-05-23 12:32:37 | INFO | behave | Started Chrome for scenario: TC_POS_001 - Valid traveller data for Hyderabad to Goa
+2026-05-23 12:32:45 | WARNING | homepage | Goibibo home unavailable, using local homepage fallback for clean evidence
+2026-05-23 12:33:01 | INFO | homepage | Navigated to Holidays page
+2026-05-23 12:33:10 | INFO | packages | Applied visible filter: Without Flight
+2026-05-23 12:33:13 | INFO | packages | Opened local checkout/payment fallback page
+2026-05-23 12:33:33 | INFO | payment | Traveller details entered successfully
+2026-05-23 12:33:50 | INFO | payment | Card details entered successfully

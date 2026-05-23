@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>goibibo - Homepage Fallback</title>
+  <style>
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #f4f8fb; color: #17233c; }
+    header { height: 92px; background: #fff; display: flex; align-items: center; padding: 0 46px; gap: 34px; box-shadow: 0 2px 12px rgba(16,24,40,.08); }
+    .logo { font-size: 34px; font-weight: 800; color: #e9482b; margin-right: 18px; }
+    .logo span { color: #2379bd; }
+    nav { display: flex; gap: 30px; align-items: center; font-size: 20px; }
+    nav a { color: #344054; text-decoration: none; font-weight: 700; padding: 12px 4px; border-bottom: 4px solid transparent; }
+    nav a.active { color: #147fc0; border-color: #147fc0; }
+    .user { margin-left: auto; border: 1px solid #d0d5dd; border-radius: 8px; padding: 14px 20px; font-weight: 700; }
+    .hero { background: #dd3e22; color: white; text-align: center; padding: 34px 0; font-size: 32px; font-weight: 800; }
+    .search { width: 1180px; margin: 34px auto; background: white; border-radius: 10px; box-shadow: 0 18px 40px rgba(16,24,40,.10); padding: 28px; }
+    .tabs { display: flex; gap: 28px; margin-bottom: 26px; font-size: 18px; }
+    .grid { display: grid; grid-template-columns: 1.2fr 1.2fr 1fr 1fr; border: 1px solid #e4e7ec; border-radius: 8px; overflow: hidden; }
+    .cell { padding: 26px; border-right: 1px solid #e4e7ec; min-height: 86px; }
+    .cell:last-child { border-right: 0; }
+    .label { color: #667085; font-size: 16px; margin-bottom: 10px; }
+    .value { font-size: 34px; font-weight: 800; }
+    .sub { color: #667085; margin-top: 6px; }
+    button { display: block; margin: 34px auto 0; background: #e6492f; color: white; border: 0; border-radius: 28px; font-size: 24px; font-weight: 800; padding: 18px 82px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">go<span>ibibo</span></div>
+    <nav>
+      <a class="active">Flights</a>
+      <a>Hotels</a>
+      <a>Trains</a>
+      <a>Cabs</a>
+      <a>Bus</a>
+      <a id="holidays-tab" href="holidays_search.html">Holidays</a>
+      <a>Forex</a>
+      <a>Insurance</a>
+    </nav>
+    <div class="user">Hey TRAVELLER</div>
+  </header>
+  <div class="hero">Domestic and International Flights</div>
+  <main class="search">
+    <div class="tabs"><strong>Oneway</strong><span>Round Trip</span><span>Multi City</span></div>
+    <div class="grid">
+      <div class="cell"><div class="label">From</div><div class="value">Delhi</div><div class="sub">DEL, Delhi Airport India</div></div>
+      <div class="cell"><div class="label">To</div><div class="value">Mumbai</div><div class="sub">BOM, Chhatrapati Shivaji International</div></div>
+      <div class="cell"><div class="label">Departure</div><div class="value">20 May'26</div><div class="sub">Wednesday</div></div>
+      <div class="cell"><div class="label">Travellers & Class</div><div class="value">1 Traveller</div><div class="sub">Economy</div></div>
+    </div>
+    <button>SEARCH</button>
+  </main>
+</body>
+</html>

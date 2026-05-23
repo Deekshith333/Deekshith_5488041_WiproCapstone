@@ -14,6 +14,7 @@ TEST_CASES = [
     pytest.param("TC_POS_002", id="positive-route-mumbai-to-rajasthan", marks=pytest.mark.positive),
     pytest.param("TC_POS_003", id="positive-route-bengaluru-to-kerala", marks=pytest.mark.positive),
     pytest.param("TC_POS_004", id="positive-route-chennai-to-andaman", marks=pytest.mark.positive),
+    pytest.param("TC_POS_005", id="positive-route-cochin-to-thailand", marks=pytest.mark.positive),
     pytest.param("TC_NEG_001", id="negative-empty-first-name", marks=pytest.mark.negative),
     pytest.param("TC_NEG_002", id="negative-invalid-phone", marks=pytest.mark.negative),
 ]

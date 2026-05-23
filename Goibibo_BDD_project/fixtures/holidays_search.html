@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>goibibo Holidays - Search Fallback</title>
+  <style>
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #f5f9fc; color: #17233c; }
+    header { height: 86px; background: #fff; display: flex; align-items: center; padding-left: 62px; box-shadow: 0 2px 12px rgba(16,24,40,.06); }
+    .brand { font-size: 32px; font-weight: 800; color: #e9482b; }
+    .brand span { color: #2379bd; font-weight: 500; }
+    .blue { height: 150px; background: #0888c8; }
+    .panel { width: 1240px; margin: -102px auto 36px; background: white; border-radius: 10px; box-shadow: 0 18px 45px rgba(16,24,40,.12); overflow: hidden; }
+    .tabs { display: grid; grid-template-columns: repeat(4,1fr); height: 84px; border-bottom: 1px solid #e4e7ec; }
+    .tab { display:flex; align-items:center; justify-content:center; font-size:20px; font-weight:700; color:#475467; }
+    .tab.active { color:#127ebc; border-bottom:4px solid #127ebc; }
+    .fields { display: grid; grid-template-columns: 1.1fr 1.3fr 1fr 1fr .95fr; border-bottom: 1px solid #edf2f7; }
+    .field { padding: 25px 22px; border-right: 1px solid #edf2f7; min-height: 92px; }
+    .field:last-child { border-right: 0; }
+    .label { color:#667085; font-size:15px; margin-bottom: 10px; }
+    .value { font-size:34px; font-weight:800; }
+    .sub { color:#667085; margin-top:7px; font-size:17px; }
+    button { display:block; margin: 28px auto 34px; background:#ff5a42; color:white; border:0; border-radius:30px; font-size:25px; font-weight:800; padding:18px 82px; }
+    .cards { width: 1240px; margin: 0 auto; background:white; border-radius:8px; padding:28px; }
+    .title { font-size:30px; font-weight:800; margin-bottom:20px; }
+    .destinations { display:flex; gap:22px; }
+    .card { width:145px; height:230px; border-radius:8px; background:linear-gradient(180deg,#87d7ef,#24445c); color:white; display:flex; align-items:flex-end; padding:14px; box-sizing:border-box; font-size:18px; font-weight:800; }
+  </style>
+</head>
+<body>
+  <header><div class="brand">goibibo <span>Holidays</span></div></header>
+  <div class="blue"></div>
+  <main class="panel">
+    <div class="tabs">
+      <div class="tab active">Search</div>
+      <div class="tab">Destinations</div>
+      <div class="tab">Super Deals</div>
+      <div class="tab">Featured</div>
+    </div>
+    <div class="fields">
+      <div class="field"><div class="label">From City</div><div id="from-city" class="value">Hyderabad</div><div class="sub">India</div></div>
+      <div class="field"><div class="label">To City/Country/Category</div><div id="to-city" class="value">Goa</div><div class="sub">Holiday Packages</div></div>
+      <div class="field"><div class="label">Departure Date</div><div id="date" class="value">20 May, 2026</div><div id="weekday" class="sub">Wednesday</div></div>
+      <div class="field"><div class="label">Rooms & Guests</div><div id="guests" class="value">1 Adult</div><div id="rooms" class="sub">1 Room</div></div>
+      <div class="field"><div class="label">Filters</div><div class="sub">Select Filters<br>(Optional)</div></div>
+    </div>
+    <button id="search-button">SEARCH</button>
+  </main>
+  <section class="cards">
+    <div class="title">Book Now Pay Later</div>
+    <div class="destinations">
+      <div class="card">Goa</div><div class="card">Kerala</div><div class="card">Andaman</div><div class="card">Himachal Pradesh</div><div class="card">Rajasthan</div>
+    </div>
+  </section>
+  <script>
+    window.setHolidaySearchData = function(data) {
+      document.getElementById('from-city').textContent = data.from_city || 'Hyderabad';
+      document.getElementById('to-city').textContent = data.to_city || 'Goa';
+      document.getElementById('date').textContent = `${parseInt(data.departure_day || '20', 10)} ${data.departure_month || 'May'}, ${data.departure_year || '2026'}`;
+      document.getElementById('guests').textContent = `${data.adults || '1'} Adult`;
+      document.getElementById('rooms').textContent = `${data.rooms || '1'} Room`;
+    };
+  </script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>goibibo Holidays - BDD Payment Boundary</title>
+  <style>
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #1d2939; background: #eef4f8; }
+    header { height: 72px; display: flex; align-items: center; justify-content: space-between; padding: 0 72px; background: #fff; border-bottom: 1px solid #e6ecf1; }
+    .brand { font-size: 28px; font-weight: 700; color: #e64224; }
+    .brand span { color: #2276b9; font-weight: 500; }
+    .bluebar { height: 104px; background: #0786c8; color: #fff; display: flex; align-items: center; padding-left: 72px; font-size: 24px; font-weight: 700; }
+    main { width: 1160px; margin: -38px auto 44px; display: grid; grid-template-columns: 1fr 340px; gap: 28px; }
+    section, aside { background: #fff; border: 1px solid #e3e8ee; border-radius: 8px; box-shadow: 0 8px 24px rgba(16, 24, 40, .06); }
+    section { padding: 28px; }
+    aside { padding: 26px; height: max-content; }
+    h1, h2, h3 { margin: 0 0 18px; }
+    h2 { font-size: 24px; }
+    .muted { color: #667085; }
+    .summary-line { display: flex; gap: 30px; padding-bottom: 22px; border-bottom: 1px solid #e6ecf1; }
+    .traveller-card { display: flex; justify-content: space-between; align-items: center; margin: 24px 0; padding: 22px; background: #f8fbfd; border-radius: 8px; }
+    .profile { color: #039855; font-weight: 700; }
+    label { display: block; margin: 18px 0 8px; font-size: 12px; font-weight: 700; color: #475467; }
+    input, select, textarea { width: 100%; box-sizing: border-box; border: 1px solid #d0d5dd; border-radius: 6px; padding: 14px; font-size: 16px; background: #f9fafb; }
+    .row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; }
+    .paybox { border-top: 1px solid #e6ecf1; padding: 22px 4px; cursor: pointer; font-size: 20px; font-weight: 700; }
+    .paybox small { display: block; margin-top: 6px; color: #667085; font-size: 14px; font-weight: 400; }
+    button { padding: 16px 30px; border: 0; border-radius: 6px; background: #df3f26; color: #fff; font-size: 16px; font-weight: 700; cursor: pointer; }
+    button.full { width: 100%; margin-top: 24px; background: #d9dde3; }
+    .amount { font-size: 34px; font-weight: 800; }
+    .terms { display: flex; align-items: flex-start; gap: 10px; margin: 24px 0; font-size: 14px; color: #475467; }
+    .terms input { width: auto; margin-top: 2px; }
+    .modal-backdrop { position: fixed; inset: 0; background: rgba(16, 24, 40, .72); display: flex; align-items: center; justify-content: center; z-index: 5; }
+    .modal { width: 980px; background: #fff; border-radius: 8px; padding: 34px; box-shadow: 0 30px 80px rgba(0, 0, 0, .28); }
+    .modal-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; }
+    .hidden { display: none; }
+    .error { margin-top: 16px; color: #d92d20; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">goibibo <span>Holidays</span></div>
+    <div>SAFE &amp; SECURED</div>
+  </header>
+  <div class="bluebar">Review package <span id="case-id" style="margin-left: 18px; font-size: 16px;"></span></div>
+
+  <main>
+    <div>
+      <section id="review-page">
+        <div class="summary-line">
+          <strong id="summary-destination">4N Goa</strong>
+          <span id="summary-dates">20 May 2026 | Hyderabad to Goa</span>
+          <strong id="summary-room-guest">1 Room - 1 Adult</strong>
+        </div>
+        <h2 style="margin-top: 26px;">1. Traveller Details</h2>
+        <div class="traveller-card">
+          <div>
+            <div class="muted">Traveller 1</div>
+            <h2 id="traveller-name">Deekshith Vanaparthi</h2>
+            <div id="route-summary" class="muted">Hyderabad to Goa</div>
+            <div id="filter-summary" class="muted">Flight: Without Flight</div>
+          </div>
+          <div class="profile">PROFILE COMPLETED</div>
+          <button type="button" onclick="showModal()">UPDATE</button>
+        </div>
+        <h2>Please enter contact details</h2>
+        <div class="row">
+          <div><label>Email</label><input name="email" placeholder="Email"></div>
+          <div><label>Mobile Code</label><input value="India (+91)"></div>
+          <div><label>Mobile</label><input name="mobile" placeholder="Mobile"></div>
+        </div>
+        <h2 style="margin-top: 30px;">Please enter GST details</h2>
+        <div style="width: 330px;"><label>GST State</label><input name="gst_state" value="Telangana"></div>
+        <div id="validation-message" class="error"></div>
+      </section>
+
+      <section id="payment-page" class="hidden" style="margin-top: 24px;">
+        <h2>Payment Options</h2>
+        <div class="paybox">UPI Options<small>Pay directly from your bank account</small></div>
+        <div class="paybox" id="card-option">Credit &amp; Debit Cards<small>Visa, Mastercard, Amex, Rupay and more</small></div>
+        <div id="card-form">
+          <h2 style="margin-top: 28px;">Enter card details</h2>
+          <label>Enter Card Number</label>
+          <input name="card_number" placeholder="Card Number">
+          <div class="row">
+            <div><label>MM</label><select name="expiry_month"><option>01</option><option>12</option></select></div>
+            <div><label>YY</label><select name="expiry_year"><option>2026</option><option>2029</option><option>29</option></select></div>
+            <div><label>CVV</label><input name="cvv" placeholder="CVV"></div>
+          </div>
+          <label>Enter Name On Card</label>
+          <input name="name_on_card" placeholder="Name on Card">
+          <label>Billing Address</label>
+          <textarea>Hyderabad, Telangana, India</textarea>
+          <button class="full" type="button">PAY</button>
+        </div>
+      </section>
+    </div>
+
+    <aside>
+      <h2>Total Due</h2>
+      <div class="amount">Rs 1</div>
+      <p>Book Now @ Rs 1</p>
+      <p class="muted">Fare breakup and coupon discount shown for automation demo.</p>
+      <div class="terms">
+        <input type="checkbox">
+        <span>I confirm that I have read and accept Cancellation Policy, User Agreement, Terms of Service and Privacy Policy.</span>
+      </div>
+      <button type="button" onclick="showPayment()">PROCEED TO PAYMENTS</button>
+    </aside>
+  </main>
+
+  <div id="traveller-modal" class="modal-backdrop">
+    <div class="modal">
+      <h2>Add Traveller Details</h2>
+      <h3>Traveller 1/1</h3>
+      <p class="muted">Mandatory Information</p>
+      <div class="modal-grid">
+        <div><label>First Name</label><input name="first_name" placeholder="First Name"></div>
+        <div><label>Last Name</label><input name="last_name" placeholder="Last Name"></div>
+        <div><label>Date Of Birth</label><div class="row"><select><option>01</option></select><select><option>Jan</option></select><select><option>2004</option></select></div></div>
+      </div>
+      <div style="width: 350px;"><label>Gender</label><select><option>MALE</option><option>FEMALE</option></select></div>
+      <div id="modal-validation-message" class="error"></div>
+      <div style="text-align: center; margin-top: 46px;"><button type="button" onclick="confirmTraveller()">CONFIRM DETAILS</button></div>
+    </div>
+  </div>
+
+  <script>
+    function showModal() {
+      document.getElementById('traveller-modal').classList.remove('hidden');
+      document.getElementById('traveller-modal').style.display = 'flex';
+    }
+    function confirmTraveller() {
+      const first = document.querySelector("input[name='first_name']").value.trim();
+      const last = document.querySelector("input[name='last_name']").value.trim();
+      if (!first) {
+        document.getElementById('modal-validation-message').textContent = 'Please enter First Name';
+        document.getElementById('validation-message').textContent = 'Please enter First Name';
+        return;
+      }
+      document.getElementById('traveller-name').textContent = `${first} ${last || ''}`.trim();
+      document.getElementById('traveller-modal').classList.add('hidden');
+      document.getElementById('traveller-modal').style.display = 'none';
+    }
+    function showPayment() {
+      const mobile = document.querySelector("input[name='mobile']").value.trim();
+      if (!/^[6-9][0-9]{9}$/.test(mobile)) {
+        document.getElementById('validation-message').textContent = 'Please enter valid Mobile Number';
+        return;
+      }
+      document.getElementById('validation-message').textContent = '';
+      document.getElementById('payment-page').classList.remove('hidden');
+      document.getElementById('payment-page').scrollIntoView({block: 'start'});
+    }
+  </script>
+</body>
+</html>
